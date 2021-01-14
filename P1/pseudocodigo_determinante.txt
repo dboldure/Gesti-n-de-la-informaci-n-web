@@ -1,0 +1,20 @@
+determinante (matriz) {
+	if (orden_matriz = 1) {
+		return matriz[0][0];
+	}
+	for (int k = 0; k < orden_matriz; k++) {
+		for (int i = 0; i < orden_matriz; i++) {
+			for (int j = 0; j < orden_matriz; j++) {
+			indicei_mp = 0;
+			indicej_mp = 0;
+				matriz_pequeña[orden_matriz - 1][orden_matriz - 1];
+				if (!(i == 0 || k == j)) {
+					matriz_pequeña[indicei_mp][indicej_mp]
+				}
+			}
+		}
+		int det = -1 ** (1 + k) * matriz[0][k] * determinante(nueva_matriz);
+	}
+	return det;
+}
+

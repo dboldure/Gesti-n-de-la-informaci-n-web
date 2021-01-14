@@ -1,0 +1,47 @@
+1.- Centro en el que se estudia la carrera cuyo id es c02:
+//carrera[@id="c02"]/centro/text()
+
+2.- Nombre de las carreras que tengan subdirector:
+
+//carrera/subdirector/../nombre/text()
+
+3.- Identificador de las carreras en las que hay algún alumno matriculado.
+	//alumno//carrera/@codigo
+
+4.- Nombre de los alumnos con beca.
+	//alumno[@beca]/nombre/text()
+
+5.- Nombre de la asignatura de id a01 y titulación c01.
+	//asignatura[@id="a01"][@titulacion="c01"]/nombre/text()
+
+6.- Nombre de las asignaturas del primer trimestre.
+	//asignatura[trimestre=1]/nombre/text()
+
+7.- Nombre de las asignaturas que no tienen 4 créditos teóricos:
+	//asignatura[not(creditos_teoricos=4)]/nombre/text()
+
+8.- Nombre de las carreras que tienen subtidrector.(Repetida con 2.-)
+	
+//carrera/subdirector/../nombre/text()
+
+9.- Nombre de los alumnos que están haciendo un proyecto.
+	//proyecto/../../nombre/text()
+
+10.- Código de las asignaturas que cursa el penúltimo alumno.
+	//alumno[last()-1]//asignatura/@codigo
+
+11.- Primer apellido de los alumnos que estudian la asignatura de código a02
+	//asignatura[@codigo="a02"]/../../../apellido1/text()
+
+12.- Nombre de la carrera que estudia Víctor Manuel.
+	//carrera[@id=//alumno[nombre="Víctor Manuel"]//carrera/@codigo]/nombre/text()
+
+13.- Nombre de las asignaturas que estudia Luisa
+	//asignatura[@id=//alumno[nombre="Luisa"]//asignatura/@codigo]/nombre/text ()
+
+14.- Primer apellido de los alumnos matriculados en Ingeniería del Software.
+	
+
+15.- Nombre de las carreras en las que estudia algún hombre.
+	I.T. Informática
+	Dipl. Empresariales

@@ -1,0 +1,19 @@
+a) Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes"
+
+//modulo[ciclo=//ciclos/ciclo[nombre="Sistemas Microinformáticos y Redes"]/@*]/nombre/text()
+
+b) Nombre de los ciclos que incluyen el módulo "Lenguajes de Marcas y Sistemas de Gestión de la Información"
+
+//ciclos/ciclo[@id=//modulo[nombre="Lenguajes de Marcas y Sistemas de Gestion de la Informacion"]/ciclo]/nombre/text()
+
+c) Nombre de los módulos de los ciclos de grado superior.
+
+//modulo[ciclo=//ciclos/ciclo[grado="Superior"]/@*]/nombre/text()
+
+d) Nombre de los módulos de los ciclos cuyo título de aprobó en 2009
+
+//modulo[ciclo=//ciclos/ciclo/decretotitulo[@año="2009"]/../@*]/nombre/text()
+
+e) Grado de los ciclos con módulos de primer curso
+
+//ciclos/ciclo[@id=//modulo[curso="1"]/ciclo/text()]/grado/text()

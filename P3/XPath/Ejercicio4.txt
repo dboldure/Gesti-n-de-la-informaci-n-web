@@ -1,0 +1,27 @@
+a) Nombre de los módulos que se imparten en el instituto
+
+//modulo/nombre/text()
+
+//nombre/text()
+
+b) Nombre de los módulos del ciclo ASIR
+
+//modulo[ciclo="ASIR"]/nombre/text()
+
+c) Nombre de los módulos de 2º curso
+
+//modulo[curso=2]/nombre/text()
+
+d) Nombre de los módulos con menos de 5 horas semanales
+
+//modulo[horassemanales<5]/nombre/text()
+
+e) Nombre de los módulos que se imparten en el primer curso de ASIR
+
+//modulo[ciclo="ASIR"][curso=1]/nombre/text()
+
+//modulo[ciclo="ASIR" and curso=1]/nombre/text()
+
+f) Identificador de los módulos de primer curso
+
+//modulo[curso=1]/@id

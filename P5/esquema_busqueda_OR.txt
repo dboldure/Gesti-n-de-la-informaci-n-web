@@ -1,0 +1,24 @@
+def buscar(dicPlantas, listaPalabras):
+    #BUSQUEDA POR OR
+    for nombrePlanta, listaInfo in dicPlantas.items():
+        mostrar = False
+        i = 0
+        while mostrar == false && i < listaPalabras.size():
+            if listaPalabras[i] in nombrePlanta:
+                mostrar = True
+                #mostrar planta
+            #Busca en el nombre cientifico (listaInfo[0])
+            elif listaPalabras[i] in listaInfo[0]: 
+                mostrar = True
+                #mostrar planta
+            else:
+                #Busca en la descripcion (listaInfo[1]), palabra a palabra en el bucle while
+                j = 0
+                salir = False
+                while salir == false && j < listaInfo[1].size():
+                    if listaPalabras[i] in listaInfo[1][j]:
+                        salir = True
+                        mostrar = True
+                        #mostrarPlanta
+                    j += 1
+            i += 1
