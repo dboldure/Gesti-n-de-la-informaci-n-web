@@ -24,7 +24,7 @@ import json
 # https://developers.google.com/identity/protocols/OpenIDConnect#appsetup
 # Copiar los valores adecuados.
 CLIENT_ID     = "696730492243-n5h66s753lbkgb1r9u325suelln6kbcl.apps.googleusercontent.com"
-CLIENT_SECRET = "c4lepF93VMBFLcs0QY3WnA9f"
+CLIENT_SECRET = ""
 REDIRECT_URI  = "http://localhost:8080/token"
 
 
